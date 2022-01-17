@@ -1,0 +1,262 @@
+/* -------------- IMPORTING GOOGLE FONTS  -------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Overpass:ital,wght@1,900&family=Roboto:ital,wght@0,400;1,900&family=The+Nautigal:wght@400;700&display=swap');
+
+
+
+/* ------------ START OF GLOBAL STYLING ----------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ------------ END OF GLOBAL STYLING ------------- */
+
+
+
+/* ------------ START OF NAVBAR STYLING ------------- */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'The Nautigal', cursive;
+}
+
+.nav-bar img{
+  height: 150px;
+}
+
+.nav-items > a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: hsl(233, 8%, 62%);
+  margin-left: 80px;
+}
+
+.nav-items a:hover{
+  color: hsl(157, 64%, 53%);
+}
+
+.nav-bar > button {
+  padding: 12px 28px;
+  border: none;
+  outline-width: 0;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  background-image: linear-gradient(120deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+/* ------------ END OF NAVBAR STYLING ------------- */
+
+
+
+/* ------------ START OF TAGLINE STYLING ------------- */
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  font-family: 'Overpass', sans-serif;
+}
+
+.hero-img-container {
+  background-image: url("../image/3.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.hero-img-container > img {
+  width: 500px;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero-text-container > h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+  line-height: 1.1;
+}
+
+.hero-text-container > p {
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-text-container > button {
+  padding: 12px 28px;
+  border: none;
+  outline-width: 0;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  background-image: linear-gradient(120deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+}
+
+.unique{
+  color: white;
+}
+
+/* ------------ END OF TAGLINE STYLING ------------- */
+
+
+
+/* ------------ START OF BANK DESCRIPTION STYLING ------------- */
+
+.container {
+  background-color: hsl(220, 16%, 96%);
+  font-family: 'Overpass', sans-serif;
+}
+
+.why-us {
+  padding-top: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10vh;
+}
+
+.why-us > h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+}
+
+.why-us > p {
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.features-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10vh;
+}
+
+.feature-item > img {
+  width: 65px;
+  margin-bottom: 5px;
+}
+
+.feature-item > h1 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(233, 26%, 24%);
+}
+
+.feature-item > p {
+  color: hsl(233, 8%, 62%);
+  font-weight: 700;
+}
+
+/* ------------ END OF BANK DESCRIPTION STYLING ------------- */
+
+
+
+/* ------------ START OF FOOTER STYLING ------------- */
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 40px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 2rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: hsl(157, 64%, 53%);
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 20px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+/* ------------ END OF FOOTER STYLING ------------- */

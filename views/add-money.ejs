@@ -1,0 +1,43 @@
+
+<!--------------- Importing header.ejs -------------->
+
+<%- include('header') %>
+
+
+<!--------------- Start of Add Money Section -------------->
+
+<div class="main-div">
+
+    <div class="table-heading" style="padding-left: 185px;">
+        <h1>MONEY ADD</h1>
+    </div>
+
+    <div class="members-img">
+
+    </div>
+    
+    <div class="form-container add" style="margin-top: 2rem;">
+    
+        <form action="/members" method="POST">
+    
+            <div class="amount" style="margin-top: 3rem;">
+                <input type="text" name="money" id="amount" placeholder="Enter Amount">
+            </div>
+    
+            <div class="transaction-btn">
+                <button class="btn-tr" type="submit">Submit</button>
+            </div>
+    
+        </form> 
+    
+    </div>
+
+</div>
+
+<!--------------- End of Add Money Section -------------->
+
+
+
+<!------------- Importing footer.ejs --------------->
+
+<%- include('footer') %>

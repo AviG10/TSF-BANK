@@ -1,0 +1,48 @@
+
+<!--------------- Importing header.ejs -------------->
+
+<%- include('header') %>
+
+
+
+<!------------- Start of View Coustomers Section --------------->
+
+<div class="table-heading">
+    <h1>MEMBERS LIST</h1>
+</div>
+
+<div class="members-img">
+        
+</div>
+
+<table class="table-main">
+
+    <tr>
+        <th>NAME</th>
+        <th>ACCOUNT NO</th>
+        <th class="email">EMAIL</th>
+        <th>BALANCE</th>
+        
+    </tr>
+    
+    <% users.forEach(user => { %>
+    
+        <tr class="table-row">
+        
+            <td> <%= user.name %> </td>
+            <td> <%= user.accountNo %> </td>
+            <td class="email"> <%= user.email %> </td>
+            <td> <%= user.balance %> </td>
+    
+        </tr>
+    
+    <% }) %>
+
+</table>
+
+<!------------- Start of View Coustomers Section --------------->
+
+
+<!------------- Importing footer.ejs --------------->
+
+<%- include('footer') %>

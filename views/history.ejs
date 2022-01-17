@@ -1,0 +1,55 @@
+
+<!--------------- Importing header.ejs -------------->
+
+<%- include('header') %>
+
+
+
+<!------------- Start of Transaction history Section --------------->
+
+<div class="table-heading" style="margin-left: -1rem;">
+    <h1>Transaction History</h1>
+</div>
+
+<div class="members-img" style="transform: translateY(-5rem);">
+
+</div>
+
+<div class="table-main-div">
+
+    <table class="table-main" style="margin-left: 7rem;">
+
+        <tr>
+        
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Amount</th>
+            <th class="date">Date</th>
+        
+        </tr>
+        
+        <% history.forEach(hist => { %>
+         
+            <tr>
+
+                <td> <%= hist.sender %> </td>
+                <td> <%= hist.receiver %> </td>
+                <td> <%= hist.amount %> </td>
+                <td class="date"> <%= hist.date %> </td>
+            
+            </tr>
+        
+            <% }) %>
+    
+    </table>
+
+</div>
+
+<!------------- Start of Transaction history Section --------------->
+
+
+
+
+<!------------- Importing footer.ejs --------------->
+
+<%- include('footer') %>

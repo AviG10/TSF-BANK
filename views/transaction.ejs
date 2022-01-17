@@ -1,0 +1,57 @@
+
+<!--------------- Importing header.ejs -------------->
+
+<%- include('header') %>
+
+
+
+<!--------------- Start Of transaction Section -------------->
+
+<div class="main-div">
+
+    <div class="table-heading">
+        <h1>MONEY TRANSFER</h1>
+    </div>
+
+    <div class="members-img">
+
+    </div>
+    
+    <div class="form-container">
+    
+        <form action="/get-started" method="POST">
+    
+            <div class="reciver-label" >
+                <label class="label1" for="select">Receiver's Name</label>
+            </div>
+    
+            <div class="select-option">
+    
+                <select name="select" id="select">
+                    <% users.forEach(user => { %>
+                        <option value=<%= user._id %>> <%= user.name %> </option>
+                    <% }) %>
+                </select>
+    
+            </div>
+    
+            <div class="amount">
+                <input type="text" name="amount" id="amount" placeholder="Amount">
+            </div>
+    
+            <div class="transaction-btn" >
+                <button class="btn-tr" type="submit" >Submit</button>
+            </div>
+    
+        </form> 
+    
+    </div>
+
+</div>
+
+<!--------------- End Of transaction Section -------------->
+
+
+<!------------- Importing footer.ejs --------------->
+
+<%- include('footer') %>

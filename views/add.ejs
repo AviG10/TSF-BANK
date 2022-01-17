@@ -1,0 +1,35 @@
+
+<!--------------- Importing header.ejs -------------->
+
+<%- include('header') %>
+
+
+<!------------ Start of Add Member Section ------------->
+
+<div class="main-div">
+    <div class="table-heading">
+        <h1>ADD MEMBERS</h1>
+    </div>
+
+    <div class="members-img">
+
+    </div>
+    
+    <div class="form-container" style="margin-left: -9rem;" >
+        <form class="form1" action="/members" method="POST">
+            <input class="add-members" type="text" name="name" placeholder="Enter Full Name" >
+            <input class="add-members" type="email" name="email" id="" placeholder="Enter your Email" >
+            <input class="add-members" type="text" name="balance" id="" placeholder="Enter current balance" >
+            <input class="add-members" type="text" name="account" placeholder="Account No." >
+            <button class="add-btn" type="submit">Add</button>
+        </form> 
+    </div>
+</div>
+
+<!------------ End of Add Member Section ------------->
+
+
+
+<!------------- Importing footer.ejs --------------->
+
+<%- include('footer') %>
