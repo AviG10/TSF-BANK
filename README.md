@@ -1,8 +1,8 @@
 # TSF-BANK
 
-## This is a Basic Banking System Website Made for THE WEB DEVELOPMENT INTERNSHIP AT SPARKS FOUNDATION
+### This is a Basic Banking System Website Made for THE WEB DEVELOPMENT INTERNSHIP AT SPARKS FOUNDATION
 
-## Functionality Of the Website are -  
+### Functionality Of the Website are -  
 
 1) Transfer Money from one account to another
 
